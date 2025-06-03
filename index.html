@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escape Room - Código Final</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContent">
+        <div class="container">
+            <header>
+                <h1 class="main-title">Sala de Comando: Última Chance</h1>
+                <p class="subtitle">Digite o comando final para encerrar a Escape Room</p>
+            </header>
+
+            <section class="instructions">
+                <p class="important-note">
+                    ⚠️ Atenção: Todas as letras devem ser MAÍUSCULAS e o código deve ser inserido corretamente. <br>Você só tem duas tentativas.
+                </p>
+                <p class="hint">
+                    Dica: O comando final foi escondido em pistas pela sala. Você tem poucos minutos para escapar.
+                </p>
+            </section>
+
+            <main>
+                <form id="codeForm" class="code-form">
+                    <div class="form-group">
+                        <label for="txt_ipt">Código Secreto:</label>
+                        <input type="text" id="txt_ipt" name="codigo" placeholder="EXEMPLO: FUGA" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="btn_send">Enviar Código</button>
+                    </div>
+                </form>
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <p>🎉 Parabéns! Você conseguiu escapar!</p>
+                </div>
+                <div id="errorMessage" class="error-message" style="display: none;">
+                    <p>❌ Código incorreto. Tente novamente. Você tem mais uma tentativa.</p>
+                </div>
+            </main>
+
+            <aside class="atmosphere">
+                <p class="atmosphere-text">
+                    O relógio na parede faz tique-taque. Luzes piscam. Um alarme baixo soa ao fundo. Cada segundo perdido reduz suas chances.
+                </p>
+            </aside>
+
+            <footer class="footer">
+                <p>SENAI © 2025 | Boa sorte. Sua vida (ou pelo menos o jogo) depende disso.</p>
+            </footer>
+        </div>
+
+        <div class="timer">
+            <p id="countdown">10:00</p>
+        </div>
+
+        <!-- Sons -->
+        <audio id="successSound" src="sounds/success.mp3"></audio>
+        <audio id="timeUpSound" src="sounds/timeUP.mp3"></audio>
+        <audio id="attempt1" src="sounds/attempt1.mp3"></audio>
+        <audio id="errorSound" src="sounds/error.mp3"></audio>
+        <audio id="clockSound" src="sounds/clock.mp3" loop></audio>
+
+        <!-- Script -->
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
