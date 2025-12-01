@@ -38,4 +38,7 @@ Este é um jogo de **Escape Room** interativo, onde o jogador deve resolver um e
 3. Envie um **pull request** explicando as modificações que você realizou.
 
 ## Licença:
-Este projeto é licenciado sob a **MIT License** - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto é licenciado sob a **MIT License** - consulte o arquivo [LICENSE](LICENSE) para mais detalhes. 
+
+##Responsáveis: 
+Fabio Alves de Oliveira, João Pedro Almeida Moraes, Pablo Weder Caminhas da Silva, Pedro Henrique Gonçalves de Melo.
